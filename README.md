@@ -24,11 +24,11 @@ Version 2 of the Swami Dayananda Saraswati Shakha Result Portal is an enhanced a
 - Version 2:
   - ReactJS
   - React Router
-  - Tailwind CSS
-  - Typewriter Effect
   - HTML5
   - CSS3
   - JavaScript
+  - Tailwind CSS
+  
 
 ## Installation
 To run the Swami Dayananda Saraswati Shakha Result Portal locally, follow these steps:
