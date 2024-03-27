@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins","sans-serif";
+}
+/* navbar */
+.nav{
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 1px 5px rgb(100, 92, 92);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.navbar div{
+    margin: 0 10px;
+}
+.navbar .heading h3{
+    font-weight: bold;
+    font-size: 25px;
+    color: blue;
+    transition: all 0.5s ease-in-out;
+}
+.navbar .show_all h3{
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar div a{
+    text-decoration: none;
+    color: black;
+}
+.navbar .heading h3:hover{
+    font-size: 27px;
+}
+.navbar .show_all h3:hover{
+    font-size: 25px;
+    transition: all 0.5s ease-in-out;
+}
+/* main */
+main{
+    padding-top:100px;
+    text-align: center;
+}
+/* header */
+header{
+    margin:50px 20px;
+}
+header h1{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+header h1 span,header h2 span{
+    font-weight: bold;
+    font-size: 45px;
+    color: orange;
+}
+
+/* input div */
+.input_div{
+    margin: 70px auto;
+    padding: 20px;
+}
+
+.input_div label{
+    color: rgb(38, 38, 51);
+    font-size: x-large;
+    line-height: 10px;
+    /* font-weight: bold; */
+}
+.input_div .input_call{
+    margin:60px auto 20px auto;
+}
+.input_div .input_call input{
+    height: 40px;
+    text-align: center;
+    max-width: 450px;
+    border: 1px solid rgb(38, 38, 51);
+    border-radius: 0px;
+    box-shadow: 1px 1px 2px black;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+}
+.input_div .input_call input:hover{
+    border-radius: 15px;
+}
+
+/* result button */
+.input_div button{
+    border: none;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(129, 184, 233);
+    border-radius: 0;
+    transition: all 0.5s ease-in-out;
+}
+.input_div button:hover{
+    background-color: rgb(14, 127, 226);
+    border-radius: 10px;
+}
+
+.input_div button:active{
+    border: 2px solid white;
+    background-color: rgb(90, 70, 182);
+    color: white;
+}
+
+/* result and students details */
+.profile{
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    outline: auto; 
+}
+/* student Info section */
+.profile .stud_details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile .stud_details .stud_image img{
+    margin: 10px auto;
+    box-shadow: 3px 3px 5px black;
+}
+
+.profile .stud_details .stud_info{
+    text-align: left;
+    line-height: 50px;
+}
+/* Student Result section */
+.profile #result_heading{
+    text-transform: uppercase;
+    color: brown;
+}
+/* table */
+.profile .result_details{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+table{
+    margin: 10px auto;
+    width: 90%;
+}
+table,th,td{
+    padding: 2px 5px;
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+/* Total marks and percentage */
+.result{
+    margin: 10px 5%;
+}
+.result h3{
+    font-weight: 800;
+    font-size: smaller;
+    text-align:start;
+    text-transform: capitalize;
+}
+
+
+
+.disable{
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 767px){
+    .profile .stud_details .stud_image img{
+        margin:10px 40px;
+    }
+    table{
+        margin: 10px auto;
+        width: 95%;
+    }
+    table,th,td{
+        font-size: small;
+        padding: 2px 5px;
+    }
+}
+

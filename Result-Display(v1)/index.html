@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULT SDSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="nav">
+        <nav>
+            <div class="navbar">
+                <div class="heading">
+                    <a href="https://drive.google.com/drive/folders/1tzXHh2hJZBgPJOm1ioPozj0wk4dFH4vv"><h3>स्वामी दयानंद सरस्वती शाखा</h3></a>
+                </div>
+                <div class="show_all">
+                    <a href="#"><h3>Result all</h3></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- main -->
+    <main>
+        <hr>
+        <header>
+            <div class="header">
+                <h1>'<span> स्व </span>' - रूपवर्धिनी </h1>
+                <h2>स्वामी <span> दयानंद </span> सरस्वती शाखा</h2>
+            </div>
+        </header>
+        <hr>
+        <!-- Input Roll No -->
+        <div class="input_div">
+            <label for="rollno">Enter Your Roll Number</label>
+            <div class="input_call">
+                <input id="rollno" type="number" placeholder="Enter Here">
+            </div>
+            <button type="submit" onclick="show()">Show Result</button>
+        </div>
+        <hr>
+        <!-- result and student details -->
+        <div id="result_div" class="profile disable">
+            <div class="stud_details">
+                <div class="stud_image">
+                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" class="rounded float-start" width="200px" height="230px" alt="profile">
+                </div>
+                <div class="stud_info">
+                    <h3>Name : <span id="name">Demo</span></h3>
+                    <h3>Roll No : <span id="roll">Demo</span></h3>
+                    <h3>Std : <span id="std">Demo</span></h3>
+                </div>
+            </div>
+            <hr>
+            <h2 id="result_heading">Sdss Result</h2>
+            <div class="result_details">
+                <table id="table">
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="result">
+                    <h3>total Marks Obtained: <span id="total"></span></h3>
+                    <h3>Percentage : <span id="percent"></span></h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="result_data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
